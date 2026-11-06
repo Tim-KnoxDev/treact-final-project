@@ -257,26 +257,31 @@ header {
 .container__about--input {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
-    border: 2px solid rgb(229, 231, 235);
-    border-radius: 500px;
+    border: 2px solid #e5e7eb;
+    border-radius: 9999px;
     padding: 6px;
-    justify-content: flex-end;
+    transition: border-color 300ms ease;
 }
 
-.row__about--input {
-    height: 60px;
-    border-radius: 500px;
-    padding: 20px 192px 20px 32px;
-    border: 2px solid rgb(229, 231, 235);
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    font-size: 16px;
-    z-index: 2;
-    transition: border-color 300ms ease;
+.container__about--input button {
+    border-radius: 9999px;
+    flex-shrink: 0;
+}
 
+.container__about--input:focus-within {
+    border-color: #6415ff;
+}
+
+
+.row__about--input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 24px;
 }
 
 
