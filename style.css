@@ -17,6 +17,7 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
 }
 
 .row__narrow {
@@ -27,6 +28,8 @@ body {
 
 .container {
     padding: 96px 0;
+    width: 100%;
+    max-width: 1280px;
 }
 
 .purple {
@@ -52,6 +55,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
     text-underline-offset: 6px;
     line-height: 14px;
     transition: text-decoration 300ms ease;
@@ -220,7 +224,87 @@ HEADER / ABOUT US ↓
 header .row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;    
+} 
+
+header {
+    display: flex;
+    padding-top: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row__about--header {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 32px 0;
+}
+
+.row__about--text {
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row__about--para {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 32px 0;
+}
+
+.container__about--input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    border-radius: 500px;
+    padding: 6px;
+    justify-content: flex-end;
+}
+
+.row__about--input {
+    height: 60px;
+    border-radius: 500px;
+    padding: 20px 192px 20px 32px;
+    border: 2px solid rgb(229, 231, 235);
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    font-size: 16px;
+    z-index: 2;
+    transition: border-color 300ms ease;
+
+}
+
+
+.row__about--button {
+    padding: 16px 36px;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;        
+    z-index: 2;
+    transition: all 300ms ease;
+
+}
+
+.row__about--img {
+    width: calc(100% - 40%);
+    padding: 24px 48px;
+}
+
+.customer__title {
+    font-size: 14px;
+    margin: 72px 0 24px;
+    color: #a0aec0;
+}
+
+.customers {
+    opacity: 0.5;
+    padding-right: 128px;
+    margin-top: 16px;
 }
 
 
